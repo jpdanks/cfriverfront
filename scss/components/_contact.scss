@@ -1,0 +1,119 @@
+.contact {
+	background: #f6f7f8;
+	position: relative;
+	@media screen and (min-width: 980px) {
+		padding: em(80) 0;
+	}
+	.location-container {
+		@include outer-container;
+		.map {
+			position: relative;
+			width: 100%;
+			height: 300px;
+			@media screen and (min-width: 980px) {
+				width: 46.46352%;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				height: auto;
+			}
+		}
+	}
+}
+
+.sign-up-form {
+	max-width: 500px;
+	margin: em(20) auto em(50);
+	text-align: center;
+	@media screen and (min-width: 980px) {
+		@include span-columns(6);
+		margin-left: 2.35765%;
+		text-align: right;
+	}
+	.address {
+		font-family: $heading-font;
+		font-weight: bold;
+		font-size: em(30);
+		text-align: center;
+		h4 {
+			font-family: 'ion-icons';
+			font-weight: 100;
+			font-size: em(40);
+			margin: em(10) 0 0 0;
+			color: #bbb;
+		}
+		small {
+			font-family: $body-font;
+			display: block;
+			font-size: em(8);
+			font-weight: 100;
+		}
+	}
+	.setup {
+		border: 1px solid $primary-color;
+		margin: 0 em(20) em(40) em(20);
+		padding: 0 em(20);
+		text-align: center;
+		h3 {
+			color: $primary-color;
+			font-family: $heading-font;
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: em(25);
+			margin: em(10) 0;
+		}
+	}
+	.full-name,
+	.email,
+	.message-body {
+		input {
+			border: none;
+			border-bottom: 5px solid #ddd;
+			background: transparent;
+			padding: em(10);
+			margin-bottom: em(20);
+			width: 100%;
+			@include transition (all 0.2s ease-in-out);
+			&:focus {
+				outline: none;
+				border-color: $primary-color;
+			}
+		}
+	}
+	.full-name,
+	.email {
+		@include span-columns(6);
+	}
+	.email {
+		margin-right: 0;
+	}
+}
+
+
+.help-promo {
+	background: #E6E6E6;
+	.promo-container {
+		@include outer-container;
+		h2 {
+			margin: 0;
+			padding: em(25) em(5);
+			font-size: em(20);
+			font-weight: 100;
+			text-align: center;
+			@media screen and (min-width: 880px) {
+				font-size: em(30);
+			}
+			a {
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.content {
+	.sign-up-form {
+		float: none;
+		margin: 0 auto;
+	}
+}

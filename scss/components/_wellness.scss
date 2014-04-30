@@ -1,0 +1,44 @@
+
+.wellness {
+	background-color:#F6CC68;
+}
+.wellness-overview,
+.wellness-image {
+	@media screen and (min-width: 700px) {
+		@include span-columns(6);
+	}
+}
+
+.wellness-overview {
+	padding-bottom: em(40);
+}
+.wellness-image {
+	padding: em(20);
+}
+
+.benefits {
+	min-width:100%;
+	background: transparent url(../img/classes.jpg) center center no-repeat; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	ol {
+		font-size: em(20);
+		color: #FFF;
+		padding: em(60) 0 em(60) em(30);
+		max-width: 380px;
+		li {
+			padding-bottom: em(20);
+		}
+	}
+}
+.content-row.odd {
+	.wellness-overview {
+		@media screen and (min-width: 700px) {
+			float: right;
+			margin-right: 0;
+			margin-left: 2.35765%;
+		}
+	}
+}

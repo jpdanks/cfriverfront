@@ -1,0 +1,79 @@
+
+.pricing-page {
+	background-color: #222;
+	.small-sub-header {
+		width: 100%;
+		@media screen and (min-width: 930px) {
+			@include span-columns(5);
+		}
+		h1 {
+			font-size: em(33);
+			@media screen and (min-width: 930px) {
+				font-size: em(60);
+			}
+		}
+		h3 {
+			color: #585858;
+			opacity: 1;
+			small {
+				text-transform: none;
+				font-family: $body-font;
+				font-weight: 300;
+			}
+		}
+	}
+	.member-levels {
+		width: 100%;
+		margin-right: 0;
+		margin-top: em(100);
+		@media screen and (min-width: 930px) {
+			@include span-columns(7);
+		}
+		.silver,
+		.gold {
+			margin: 0 0 em(10) 0;
+		}
+		.price-table .price-row .type {
+			font-size: em(16);
+		}
+		.price-table .price-row .cost {
+			font-size: em(24);
+		}
+	}
+	.sign-up-form {
+		
+		margin-top: em(50);
+		color: $primary-color;
+		@media screen and (min-width: 930px) {
+			@include span-columns(5);
+			@include shift(2);
+			margin-right: 0;
+			margin-top: em(150);
+		}
+		.full-name,
+		.email,
+		.message-body {
+			input {
+				border-bottom-color: #444;
+				color: #BBB;
+
+				&:focus {
+					outline: none;
+					border-color: $primary-color;
+				}
+			}
+			::-webkit-input-placeholder {
+				color: #555;
+			}
+			:-moz-placeholder {
+				color: #555;
+			}
+			::-moz-placeholder {
+				color: #555;
+			}
+			:-ms-input-placeholder {
+				color: #555;
+			}
+		}
+	}
+}

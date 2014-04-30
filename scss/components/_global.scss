@@ -1,0 +1,229 @@
+html, button, input, select, textarea, body, p {
+	font-family: $body-font;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	background: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $body-font;
+}
+h2 {
+	font-size: em(60);
+	&.headline {
+		font-weight: 100;
+		font-family: $body-font;
+		padding: em(10) 0;
+		color: $secondary-color;
+		text-align: center;
+	}
+}
+address {
+	font-style: normal;
+}
+hr {
+	border: 0;
+	border-top: 1px solid #eee;
+	text-align: center;
+	margin: 15% 0;
+	&:after {
+		color: #999;
+		position: relative;
+		top: -28px;
+	}
+}
+
+a,button {
+   outline: 0;
+   &:focus {
+      outline: 0;
+   }
+}
+
+a.link:hover {
+	text-decoration: underline;
+}
+
+.wrapper {
+	@include outer-container;
+	padding: 0 2.35765%;
+	overflow:auto;
+}
+.content-row {
+	@include row();
+	margin-top: em(60);
+	margin-bottom: em(60);
+}
+
+section{
+	clear: both;
+	overflow: hidden;
+	&.content {
+		background: #f7f8f9;
+		padding: em(60) 0;
+		h2 {
+			font-size: em(30);
+		}
+		&.darken {
+			background: #ddd;
+		}
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+// Responsive Mixins
+
+@mixin bp-large {
+  @media only screen and (max-width: 60em) {
+    @content;
+  }
+}
+
+@mixin bp-medium {
+  @media only screen and (max-width: 40em) {
+    @content;
+  }
+}
+
+@mixin bp-small {
+  @media only screen and (max-width: 30em) {
+    @content;
+  }
+}
+
+// Component Enhancements
+
+
+.border-row {
+	border-top: 1px solid $secondary-color;
+	border-bottom: 1px solid $secondary-color;
+	a {
+		margin-left: em(10);
+		font-family: $heading-font;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	.crf {
+		color: $green;
+	}
+	.rf {
+		color: $blue;
+	}
+	.yo {
+		color: $purple;
+	}
+	.ff {
+		color: $red;
+	}
+	.st{
+		color: #888;
+	}
+}
+.fancy {
+	font-family: $fancy-font;
+	font-style: italic;
+}
+
+
+.padding-block {
+	height: em(100);
+	@include row();
+}
+
+.sub-page-header {
+	// background-image: url('../img/diagmonds_@2X.png');
+	// background-position: bottom right;
+	// background-repeat: repeat;
+	h1 {
+		color: #FFF;
+		margin-top: em(100);
+		margin-bottom: 0;
+		font-weight: 100;
+		font-size: em(60);
+		@media only screen and (min-width: 600px) {
+			margin-top: em(60);
+		}
+	}
+	h3 {
+		padding-bottom: em(40);
+		opacity: 0.4;
+		font-family: $heading-font;
+		text-transform: uppercase;
+		font-size: em(14);
+		@media only screen and (min-width: 600px) {
+			opacity: 0.25;
+			padding-bottom: em(80);
+			font-size: em(20);
+		}
+	}
+}
+
+.note {
+	color: #888;
+}
+
+
+.four-oh-four-container {
+	color: #FFF;
+	margin: em(100) auto;
+	max-width: 500px;
+	text-align: center;
+	h1 {
+		font-weight: 100;
+		font-size: em(80);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+    .small-break {
+		display: block;
+	}
+  }
+
+ // form feedback
+
+#barley-form-message {
+ 	background-color: #444;
+	margin: 10px;
+	border-radius: 3px;
+	padding: 10px;
+	color: #FFF;
+	&.success {
+		background-color: $green;
+	}
+	&.error {
+		background-color: $red;
+	}
+ }
+
+ a {
+ 	&.crf {
+		color: $green;
+		font-weight: 700;
+	}
+	&.rf {
+		color: $blue;
+		font-weight: 700;
+	}
+	&.yo {
+		color: $purple;
+		font-weight: 700;
+	}
+	&.ff {
+		color: $red;
+		font-weight: 700;
+	}
+	&.st{
+		color: #888;
+		font-weight: 700;
+	}
+ }
+
+ .light {
+ 	font-weight: 100;
+ }

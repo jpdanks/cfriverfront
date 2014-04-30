@@ -1,0 +1,44 @@
+<!-- Header Variables -->
+    <!-- $pageTitle = Jobs -->
+    <!-- $pageDescription = CrossFit Riverfronts job openings. -->
+    <!-- $pageKeywords = crossfit workouts strongman excercise fitness rivfit riverfront wilmington delaware -->
+
+    <!-- @import 'components/head.kit' -->
+
+    <!-- Nav Class -->
+        <!-- $page_1_Nav = inactive -->
+        <!-- $page_2_Nav = inactive -->
+        <!-- $page_3_Nav = inactive -->
+        <!-- $page_4_Nav = inactive -->
+        <!-- $page_5_Nav = inactive -->
+
+        <!-- @import 'components/navbar.kit' -->
+        <section class="sub-page-header pricing-page">
+            <div class="wrapper">
+                <div class="small-sub-header">
+                    <h1 data-barley="jobs_heading" data-barley-editor="mini">Jobs</h1>
+                    <h3 data-barley="jobs_tagline" data-barley-editor="mini">Interested in being a part of the team?</h3>
+                </div>
+                <div class="sign-up-form">
+                    <div class="setup">
+                        <p data-barley="jobs_forum" data-barley-editor="mini">Fill out the form and take the first step towards changing lives!</p>
+                    </div>
+                    <form id="barley-form">
+                        <input type="hidden" name="to" id="to" value="cfriverfront@gmail.com" />
+                        <input type="hidden" name="subject" id="subject" value="Job Inquiry" />
+                        <input type="hidden" name="response_success" id="response_success" value="Thanks, we got it!" />
+                        <input type="hidden" name="response_error" id="response_error" value="Sorry Chap, please try again." />
+
+                        <div class="full-name"><input class="text" id="name" data-required="true"placeholder="Full Name"></div>
+                        <div class="email"><input class="email" id="email" data-required="true"placeholder="Email Address"></div>
+                        <div class="message-body"><input class="text" name="message" placeholder="What type of Job are you interested in?"></div>
+                        <div id="barley-form-message" style="display:none;"></div>
+                        <button class="btn sign-up" id="barley-submit">Send</button>
+                    </form>
+                </div> 
+            </div>
+        </section>
+        
+        <!-- @import 'components/footer.kit' -->
+    </body>
+</html>

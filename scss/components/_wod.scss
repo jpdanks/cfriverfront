@@ -1,0 +1,75 @@
+
+.video-promo {
+	background: #333333;
+	border-top: 1px solid #222;
+	overflow: hidden;
+	.label {
+		padding: em(10);
+		text-align: center;
+			h2 {
+				color: white;
+				font-size: em(30);
+				font-family: $body-font;
+				margin: em(15) 0 0 0;
+			}
+			h3 {
+				color: $grey;
+				font-family: $fancy-font;
+				font-weight: normal;
+				margin: em(5) 0 em(20) 0;
+			}
+		@media screen and (min-width: 880px) {
+			@include span-columns(5);
+			text-align: right;
+			padding: em(40);
+			h2 {
+				color: white;
+				font-size: em(30);
+				font-family: $body-font;
+				margin: em(15) 0 0 0;
+			}
+			h3 {
+				color: $grey;
+				font-family: $fancy-font;
+				font-weight: normal;
+				margin: em(5) 0 em(20) 0;
+			}
+		}
+	}
+	.watch-video {
+		a.video-link {
+			padding: 0 0 em(30) 0;
+			text-align: center;
+			display: block;
+			img {
+				opacity: 0.7;
+				max-width: 300px;
+				border: 1px solid #222;
+				box-shadow: 0 0 1px rgba(0,0,0,0.2);
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+		@media screen and (min-width: 880px) {
+			@include span-columns(6);
+			a.video-link {
+				display: inline-block;
+				padding: em(30) 0;
+				.video-btn-text {
+					font-size: em(30);
+					vertical-align: middle;
+					padding-left: em(15);
+					font-weight: 100;
+				}
+			}
+			&:hover {
+				.play-btn {
+					background: $primary-color;
+					color: #333;
+				}
+			}
+		}
+	}
+}
+

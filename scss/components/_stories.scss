@@ -1,0 +1,101 @@
+
+.stories {
+	background: #eee;
+	padding-bottom: em(60);
+	.testimonials {
+		@include outer-container;
+		padding: em(5);
+		.video-item {
+			max-width: 600px;
+			margin: 0 auto;
+			&:first-of-type {
+				margin-bottom: em(100);
+			}
+			@media screen and (min-width: 880px) {
+				@include span-columns(6);
+				&:nth-of-type(even) {
+					margin-right: 0;
+				}
+				&:first-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+		.text-item {
+			max-width: 400px;
+			padding: em(10);
+			margin: 0 auto;
+			@media screen and (min-width: 880px) {
+				@include span-columns(4);
+				padding: 0;
+			}
+		}
+		.video-item,
+		.text-item  {
+			background: #fff;
+			box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+			margin-bottom: em(24);
+			.video-image {
+				display: block;
+				margin: em(10);
+				margin-top: em(-40);
+				position: relative;
+				.play-btn-overlay {
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left:0;
+					text-align: center;
+					font-family: 'ion-icons';
+					opacity: 0.75;
+					.ion-icons {
+						font-size: em(80);
+						margin-top: 20%;
+						color: #fff;
+					}
+				}
+				img {
+					box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+					vertical-align: bottom;
+				}
+			}
+			.name {
+				text-align: center;
+				border-bottom: 1px solid #ddd;
+				h3 {
+				}
+			}
+			.watch-video {
+				text-align: center;
+				padding: em(10);
+			}
+			blockquote {
+				line-height: 1.5;
+				font-weight: 100;
+				footer {
+					margin-top: em(10);
+				}
+			}
+		}
+		&.pricing {
+			.text-item {
+				max-width: 600px;
+				margin: 0 auto;
+				text-align: center;
+				@media screen and (min-width: 880px) {
+					@include span-columns(6);
+					margin-right: 0;
+				}
+				blockquote {
+					text-align:left;
+				}
+				a.link {
+					display: block;
+					background: #f8f8f8;
+					padding: em(10);
+				}
+			}
+		}
+	}
+}

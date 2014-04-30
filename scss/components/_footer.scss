@@ -1,0 +1,258 @@
+
+.color-row {
+	.green, .blue, .purple, .red {
+		display: block;
+		float: left;
+		width: 25%;
+		height: 10px;
+	}
+	.green {
+		background: $green;
+	}
+	.blue {
+		background: $blue;
+	}
+	.purple {
+		background: $purple;
+	}
+	.red {
+		background: $red;
+	}
+}
+
+.footer-row {
+	@include row();
+	border-bottom: 1px solid $dark-border;
+	display: table;
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+	&:last-of-type {
+		border-bottom: none;
+	}
+	.contact-info {
+		width: 100%;
+		overflow: hidden;
+		border-right: 1px solid $dark-border;
+		@media screen and (min-width: 800px) {
+			@include span-columns(6);
+		}
+		@media screen and (min-width: 810px) {
+			@include span-columns(5);
+			display: table-cell;
+		}
+		@media screen and (min-width: 1120px) {
+			@include span-columns(4);
+		}
+		.contact-info-container {
+			margin: 0 auto;
+			overflow: hidden;
+			max-width: 400px;
+		}
+		.location-info,
+		.logo {
+			color: #666;
+			font-size: em(14);
+			padding: em(20) em(10);
+			margin: 0 auto;
+			width: 100%;
+			text-align: center;
+			@media screen and (min-width: 600px) {
+				text-align: left;
+				width: auto;
+				float: left;
+				margin: auto;
+			}
+			a {
+				color: #666;
+				text-decoration: underline;
+				&:hover {
+					color: #FFF;
+				}
+			}
+		}
+		.logo {
+			width: 120px;
+			padding: em(10);
+			margin-top: em(10);
+		}
+	}
+	.social {
+		width: 100%;
+		text-align: center;
+		@media screen and (min-width: 800px) {
+			@include span-columns(6);
+		}
+		@media screen and (min-width: 810px) {
+			@include span-columns(7);
+			display: table-cell;
+		}
+		@media screen and (min-width: 965px) {
+			@include span-columns(5);
+			display: table-cell;
+			border-right: 1px solid $dark-border;
+		}
+		.keep-contected {
+			font-size: em(24);
+			font-family: $heading-font;
+			font-weight: 100;
+			color: $secondary-color;
+			text-transform: uppercase;
+			.social-icons {
+				display: block;
+				@media screen and (min-width: 965px) {
+					display: inline-block;
+				}
+			}
+			@media screen and (min-width: 965px) {
+				font-size: em(20);
+				margin-top: em(30);
+			}
+			a {
+				margin-left: em(10);
+				&:hover {
+					color: #FFF;
+				}
+			}
+		}
+	}
+	.scroll-top {
+		display: none;
+		border-right: 1px solid $dark-border;
+		@media screen and (min-width: 1120px) {
+			@include span-columns(1);
+		}
+		.scroll-to-top {
+			display: block;
+			background: #4D4D4D;
+			color: #333;
+			text-align: center;
+			padding: em(4) 0;
+			margin: 0 auto;
+			height: 50px;
+			width: 50px;
+			font-size: em(30);
+			border-radius: 3px;
+			margin-top: em(15);
+			border: 2px solid transparent;
+			&:hover {
+				border-color: #FFF;
+				color: #FFF;
+				background: #333;
+			}
+		}
+	}
+	.sign-up-footer {
+		width: 100%;
+		border-top: 1px solid $dark-border;
+		text-align: center;
+		padding: em(20) 0;
+		@media screen and (min-width: 800px) {
+			display: none;
+		}
+		@media screen and (min-width: 956px) {
+			@include span-columns(2);
+			font-size: em(12);
+			display: table-cell;
+			.btn {
+				margin-top: em(20);
+			}
+		}
+		@media screen and (min-width: 1120px) {
+			display: table-cell;
+			@include span-columns(2);
+		}
+		.btn {
+			font-size: em(20);
+			border-color: #666;
+			&:hover {
+				border-color: $primary-color;
+			}
+		}
+	}
+	.contact-info,
+	.social,
+	.scroll-top,
+	.sign-up-footer  {
+		@media screen and (min-width: 965px) {
+			height: 120px;
+		}
+		@media screen and (min-width: 1120px) {
+			height: 120px;
+			display: table-cell;
+			margin: 0;
+			vertical-align: center;
+		}
+	}
+	.social {
+		@media screen and (max-width: 1120px) {
+			margin-right: 0;
+		}
+	}
+	.footer-nav {
+		ul {
+			margin: 0;
+			padding: 0;
+			li {
+				float: left;
+				font-family: $heading-font;
+				text-transform: uppercase;
+				font-weight: bold;
+				padding: em(20) em(10);
+				font-size: em(12);
+				width: 50%;
+				text-align: center;
+				@media screen and (min-width: 780px) {
+					@include span-columns(7);
+					width: auto;
+					text-align: left;
+					margin: 0;
+				}
+				@media screen and (min-width: 990px) {
+					font-size: em(14);
+				}
+				a {
+					color: #808080;
+					&:hover {
+						color: #FFF;
+					}
+				}
+				&.text-right {
+					font-weight: normal;
+					text-transform: none;
+					font-family: $body-font;
+					color: #666;
+					@media screen and (min-width: 1000px) {
+						float: right;
+					}
+				}
+			}
+		}
+	}
+	.madeby {
+		text-align: center;
+		padding: em(20);
+		.fancy {
+			color: #666;
+		}
+		h5 {
+			padding: 0;
+			margin: 0;
+			font-size: em(20);
+			font-family: $heading-font;
+			text-transform: uppercase;
+			a {
+				color: #666;
+				&:hover {
+					color: #FFF;
+				}
+			}
+		}	
+	}
+}
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+
+$green:				#8DC449;
+$blue:				#33ACE0;
+$purple:			#65318F;
+$red:				#BF2932;
+$gold:				#DEAD44;
+
+
+$primary-color:		$green;
+$secondary-color:	$gold;
+$grey:				#888888;
+$dark-grey:			#444;
+$pale-green:		#DDEDC8;
+
+$link-color:		$primary-color;
+$dark-link-color:	$dark-grey;
+
+$dark-border: 		#4D4D4D;
+
+
+$heading-font:		"brandon-grotesque",sans-serif;;
+$body-font:			'Open Sans', 'Helvetica Neue', Helvetica;
+$fancy-font:		'Baskerville';
+
+
+*, header {
+	@include box-sizing(border-box);
+}
+
+a,a:link {
+	color:$primary-color;
+	text-decoration: none;
+	@include transition (all 0.2s ease-in-out);
+}
+button {
+	@include transition (all 0.2s ease-in-out);
+}

@@ -1,0 +1,90 @@
+<!-- Header Variables -->
+    <!-- $pageTitle = Stories -->
+    <!-- $pageDescription = CrossFit Riverfronts stories and testimonials. -->
+    <!-- $pageKeywords = crossfit workouts strongman excercise fitness rivfit riverfront wilmington delaware -->
+
+    <!-- @import 'components/head.kit' -->
+
+    <!-- Nav Class -->
+        <!-- $page_1_Nav = inactive -->
+        <!-- $page_2_Nav = inactive -->
+        <!-- $page_3_Nav = inactive -->
+        <!-- $page_4_Nav = active -->
+        <!-- $page_5_Nav = inactive -->
+        
+        <!-- @import 'components/navbar.kit' -->
+        <section class="sub-page-header stories-page">
+            <div class="wrapper">
+                <h1 data-barley="stories_heading" data-barley-editor="mini" data-start="opacity:1;" data-top="opacity:0;">River Monster Stories</h1>
+                <h3 data-barley="stories_tagline" data-barley-editor="mini" data-start="opacity:.25; padding-bottom: 5em;" data-top="opacity:0; padding-bottom: 0em;">The stories and testimonials of our River Monster Family</h3>
+            </div>
+        </section>
+        <section class="stories">
+            <div class="padding-block"></div>
+            <div class="testimonials">
+                <div class="video-item">
+                    <a href="http://www.youtube.com/watch?v=sJ2bjdird3U" class="video-image popup-youtube">
+                        <img src="img/video-2.jpg" alt="Kamala testimonial video">
+                    </a>
+                    <div class="name">
+                        <h3>Kamala</h3>
+                    </div>
+                    <div class="watch-video">
+                        <button class="btn"><a href="http://www.youtube.com/watch?v=sJ2bjdird3U" class="popup-youtube">Watch</a></button>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <a href="http://www.youtube.com/watch?v=krmxllK_JT0" class="video-image popup-youtube">
+                        <img src="img/video.jpg" alt="Richard testimonial video">
+                    </a>
+                    <div class="name">
+                        <h3>Richard</h3>
+                    </div>
+                    <div class="watch-video">
+                        <button class="btn"><a href="http://www.youtube.com/watch?v=krmxllK_JT0" class="popup-youtube">Watch</a></button>
+                    </div>
+                </div>
+                <div class="text-item" data-barley="text_testimonial1" data-barley-editor="mini">
+                    <blockquote>“I needed a new fitness plan in my life, and this is great.  I am 53 years old and find challenging myself even more so now than in my 20s.  Hard work, but I will continue.”
+                        <footer>— <cite><a title="" href="">Harolyn</a></cite></footer>
+                    </blockquote>
+                </div>
+                <div class="text-item" data-barley="text_testimonial2" data-barley-editor="mini">
+                    <blockquote>“So far it has surpassed my expectations! The coaches are great: they're friendly, interactive, engaging, encouraging, knowledgeable... I'm learning everyday & challenging myself...  Overall I like it.”
+                        <footer>— <cite><a title="" href="">Twainnia</a></cite></footer>
+                    </blockquote>
+                </div>
+                <div class="text-item" data-barley="text_testimonial3" data-barley-editor="mini">
+                    <blockquote>“Love it. It's amazing the difference from the first night. I was exhausted from the warm up now am getting through the WOD's, still exhausted but getting through them.”
+                        <footer>— <cite><a title="" href="">John Bogucki</a></cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="wrapper">
+                <div class="sign-up-form">
+                    <div class="setup">
+                        <h3 data-barley="stories_forum_heading" data-barley-editor="mini">We want to hear your story!</h3>
+                        <p data-barley="stories_forum" data-barley-editor="mini">Fill out the form below and tell us all bout your journey. You could end up being next months <strong>River Monster of the Month</strong> and be featured on our Blog <span class="fancy">&amp;</span> Newsletter!</p>
+                    </div>
+                    <form id="barley-form">
+                        <input type="hidden" name="to" id="to" value="cfriverfront@gmail.com" />
+                        <input type="hidden" name="subject" id="subject" value="CFriverfront Testimonial" />
+                        <input type="hidden" name="response_success" id="response_success" value="Thanks, we got it!" />
+                        <input type="hidden" name="response_error" id="response_error" value="Sorry Chap, please try again." />
+
+                        <div class="full-name"><input class="text" id="name" data-required="true"placeholder="Full Name"></div>
+                        <div class="email"><input class="email" id="email" data-required="true"placeholder="Email Address"></div>
+                        <div class="message-body"><input class="text" name="message" placeholder="Tell us your story.."></div>
+                        <div id="barley-form-message" style="display:none;"></div>
+                        <button class="btn sign-up" id="barley-submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- @import 'components/footer.kit' -->
+    </body>
+</html>

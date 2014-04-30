@@ -1,0 +1,102 @@
+<!-- Header Variables -->
+    <!-- $pageTitle = Pricing -->
+    <!-- $pageDescription = CrossFit Riverfronts pricing and member levels. -->
+    <!-- $pageKeywords = crossfit workouts strongman excercise fitness rivfit riverfront wilmington delaware -->
+
+    <!-- @import 'components/head.kit' -->
+
+    <!-- Nav Class -->
+        <!-- $page_1_Nav = inactive -->
+        <!-- $page_2_Nav = inactive -->
+        <!-- $page_3_Nav = inactive -->
+        <!-- $page_4_Nav = inactive -->
+        <!-- $page_5_Nav = active -->
+
+        <!-- @import 'components/navbar.kit' -->
+        <section class="sub-page-header pricing-page">
+            <div class="wrapper">
+                <div class="small-sub-header">
+                    <h1 data-barley="pricing_heading" data-barley-editor="mini">Pricing Options</h1>
+                    <h3 data-barley="pricing_tagline" data-barley-editor="mini">We offer two levels as well as discounts!
+                        <small>Are you a Company? Learn about our <br><a href="wellness.html" class="link">Corporate Wellness Program!</a></small>
+                    </h3>
+                </div>
+                <div class="member-levels">
+                    <h4 class="silver member">Silver Membership</h4>
+                    <div class="price-table">
+                        <div class="price-row" data-barley="silver_mem_ex" data-barley-editor="mini">
+                            <div class="type">Rivfit Unlimited<br><small>(with Auto-pay)</small></div>
+                            <div class="cost">$125 mo.</div>
+                        </div>
+                    </div>
+                    <h4 class="gold member">Gold Membership</h4>
+                    <div class="price-table" data-barley="gold_mem_ex" data-barley-editor="mini">
+                        <div class="price-row">
+                            <div class="type">Active Service Members<br><small>(with Auto-pay)</small></div>
+                            <div class="cost">$140 mo.</div>
+                        </div>
+                        <div class="price-row">
+                            <div class="type">High School <span class="fancy">&amp;</span> Full-Time College Students<br><small>(with Auto-pay)</small></div>
+                            <div class="cost">$125 mo.</div>
+                        </div>
+                        <div class="price-row">
+                            <div class="type">All Classes Unlimited<br><small>(with Auto-pay)</small></div>
+                            <div class="cost promo">$175 mo.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stories">
+            <h2 class="headline">Stories from River Monsters</h2>
+            <div class="testimonials pricing">
+                <div class="video-item">
+                    <a href="http://www.youtube.com/watch?v=sJ2bjdird3U" class="video-image popup-youtube">
+                        <img src="img/video-2.jpg" alt="Kamala testimonial video">
+                    </a>
+                    <div class="name">
+                        <h3>Kamala</h3>
+                    </div>
+                    <div class="watch-video">
+                        <button class="btn"><a href="http://www.youtube.com/watch?v=sJ2bjdird3U" class="popup-youtube">Watch</a></button>
+                    </div>
+                </div>
+                <div class="text-item" data-barley="pricing_testimonials" data-barley-editor="mini">
+                    <blockquote>“I needed a new fitness plan in my life, and this is great.  I am 53 years old and find challenging myself even more so now than in my 20s.  Hard work, but I will continue.”
+                        <footer>— <cite><a title="" href="">Harolyn</a></cite></footer>
+                    </blockquote>
+                    <blockquote>“So far it has surpassed my expectations! The coaches are great: they're friendly, interactive, engaging, encouraging, knowledgeable... I'm learning everyday & challenging myself...  Overall I like it.”
+                        <footer>— <cite><a title="" href="">Twainnia</a></cite></footer>
+                    </blockquote>
+                    <a href="" class="link">More Stories...</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="wrapper">
+                <div class="sign-up-form">
+                    <div class="setup">
+                        <h3 data-barley="pricing_forum_heading" data-barley-editor="mini">Ready to Join?</h3>
+                        <p data-barley="pricing_forum" data-barley-editor="mini">Fill out the form below and our expert staff will email back soon to help guide you through the sign up process!</p>
+                    </div>
+                    <form id="barley-form">
+                        <input type="hidden" name="to" id="to" value="cfriverfront@gmail.com" />
+                        <input type="hidden" name="subject" id="subject" value="Membership Inquiry" />
+                        <input type="hidden" name="response_success" id="response_success" value="Thanks, we got it!" />
+                        <input type="hidden" name="response_error" id="response_error" value="Sorry Chap, please try again." />
+
+                        <div class="full-name"><input class="text" id="name" data-required="true"placeholder="Full Name"></div>
+                        <div class="email"><input class="email" id="email" data-required="true"placeholder="Email Address"></div>
+                        <div class="message-body"><input class="text" name="message" placeholder="What Membership are you interested in?"></div>
+                        <div id="barley-form-message" style="display:none;"></div>
+                        <button class="btn sign-up" id="barley-submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- @import 'components/footer.kit' -->
+    </body>
+</html>

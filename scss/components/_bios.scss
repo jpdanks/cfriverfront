@@ -1,0 +1,139 @@
+
+.bios {
+	background-color: #76AA49;
+}
+
+.bio {
+	position: relative;
+	// max-width: 1400px;
+	// margin: 0 auto;
+	background-size: contain!important;
+	&.meredith {
+		background-image: url(../img/crossfit.jpg); 
+	}
+	&.rachael {
+		background-image: url(../img/coaches/rachael-action.jpg); 
+	}
+	&.Mikaelyn {
+		background-image: url(../img/bg-1.jpg); 
+	}
+	&.cyndi {
+		background-image: url(../img/coaches/cyndi-action.jpg); 
+	}
+	&.john {
+		background-image: url(../img/fightfit.jpg); 
+	}
+	&.ross {
+		background-image: url(../img/coaches/ross-action.jpg); 
+	}
+	& {
+		background-color: #000;
+		background-position: top center;
+		padding-top: em(160);
+		background-repeat: no-repeat !important;
+		@media screen and (min-width: 680px) {
+			padding-top: em(300);
+		}
+		@media screen and (min-width: 1050px) {
+			padding-top: 0;
+			background-position-x: -155px !important;
+			background-size: contain!important;
+		}
+	}
+	.bio-overlay {
+		position: absolute;
+		top: 0;
+		min-width: 100%;
+		min-height: 100%;
+		z-index: 10;
+		background-image: -webkit-linear-gradient(bottom,#000 0%,#000 45%,transparent 85%);
+			background-image: -moz-linear-gradient(bottom,#000 0%,#000 45%,transparent 85%);
+			background-image: -ms-linear-gradient(bottom,#000 0%,#000 45%,transparent 85%);
+			background-image: -o-linear-gradient(bottom,#000 0%,#000 45%,transparent 85%);
+			background-image: linear-gradient(bottom,#000 0%,#000 45%,transparent 85%);
+		@media screen and (min-width: 1050px) {
+			background-image: -webkit-linear-gradient(right,#000 0%,#000 45%,transparent 85%);
+			background-image: -moz-linear-gradient(right,#000 0%,#000 45%,transparent 85%);
+			background-image: -ms-linear-gradient(right,#000 0%,#000 45%,transparent 85%);
+			background-image: -o-linear-gradient(right,#000 0%,#000 45%,transparent 85%);
+			background-image: linear-gradient(right,#000 0%,#000 45%,transparent 85%);
+		}
+	}
+	.bio-info {
+		color: #FFF;
+		position: relative;
+		padding: em(40) em(20);
+		z-index: 10;
+		max-width: 500px;
+		margin: 0 auto;
+		
+		@media screen and (min-width: 1050px) {
+			min-height: 700px;
+			@include span-columns(6);
+			@include shift(5);
+		}
+		@media screen and (min-width: 1100px) {
+			@include span-columns(5);
+			@include shift(6);
+		}
+		@media screen and (min-width: 1240px) {
+			@include span-columns(4);
+			@include shift(7);
+		}
+		h2 {
+			font-size: em(28);
+			color: $secondary-color;
+			border-bottom: 1px solid $secondary-color;
+		}
+	}
+	&.odd {
+		&.jeff {
+			background-image: url(../img/coaches/jeff-action.jpg); 
+		}
+		&.paige {
+			background-image: url(../img/coaches/paige-action.jpg); 
+		}
+		&.steve {
+			background-image: url(../img/coaches/steve-action.jpg); 
+		}
+		&.aimee {
+			background-image: url(../img/coaches/aimee-action.jpg); 
+		}
+		&.matthew {
+			background-image: url(../img/rivfit.jpg); 
+		}
+		&.bill {
+			background-image: url(../img/coaches/bill-action.jpg); 
+		}
+		& {
+			background-color: #FFF;
+			background-position: top center;
+			@media screen and (min-width: 1050px) {
+				background-position-x: right !important;
+				background-repeat: no-repeat;
+				background-size: contain!important;
+			}
+		}
+		.bio-overlay {
+			background-image: -webkit-linear-gradient(bottom,#FFF 0%,#FFF 45%,transparent 85%);
+			background-image: -moz-linear-gradient(bottom,#FFF 0%,#FFF 45%,transparent 85%);
+			background-image: -ms-linear-gradient(bottom,#FFF 0%,#FFF 45%,transparent 85%);
+			background-image: -o-linear-gradient(bottom,#FFF 0%,#FFF 45%,transparent 85%);
+			background-image: linear-gradient(bottom,#FFF 0%,#FFF 45%,transparent 85%);
+			@media screen and (min-width: 1050px) {
+				background-image: -webkit-linear-gradient(left,#FFF 0%,#FFF 35%,transparent 65%);
+				background-image: -moz-linear-gradient(left,#FFF 0%,#FFF 35%,transparent 65%);
+				background-image: -ms-linear-gradient(left,#FFF 0%,#FFF 35%,transparent 65%);
+				background-image: -o-linear-gradient(left,#FFF 0%,#FFF 35%,transparent 65%);
+				background-image: linear-gradient(left,#FFF 0%,#FFF 35%,transparent 65%);
+			}
+		}
+		.bio-info {
+			@media screen and (min-width: 1050px) {
+				@include shift(1);
+			}
+			color: #333;
+		}
+	}
+}
+

@@ -1,0 +1,16 @@
+
+.about {
+	background: #f8f8f8;
+	@include full-width-tabs($green);
+	.tab-labels{
+		h2 {
+			font-family: "Open Sans";
+			font-size: em(70);
+			font-weight: 100;
+			text-align: right;
+			width: 100%;
+			padding-right: em(10);
+			color: darken($pale-green, 15%);
+		}
+	}
+}
