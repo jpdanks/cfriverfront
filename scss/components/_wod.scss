@@ -1,16 +1,19 @@
 
 .video-promo {
-	background: #333333;
-	border-top: 1px solid #222;
+	background: #eee;
+	padding: em(50) 0;
 	overflow: hidden;
+	@media screen and (min-width: 600px) {
+		padding: em(150) 0;
+	}
 	.label {
-		padding: em(10);
 		text-align: center;
 			h2 {
-				color: white;
+				color: $secondary-color;
 				font-size: em(30);
+				font-weight: 100;
 				font-family: $body-font;
-				margin: em(15) 0 0 0;
+				margin-bottom: em(5);
 			}
 			h3 {
 				color: $grey;
@@ -18,15 +21,17 @@
 				font-weight: normal;
 				margin: em(5) 0 em(20) 0;
 			}
+			p {
+				color: #888;
+				line-height: 2;
+			}
 		@media screen and (min-width: 880px) {
-			@include span-columns(5);
-			text-align: right;
-			padding: em(40);
+			@include span-columns(6);
+			text-align: left;
 			h2 {
-				color: white;
-				font-size: em(30);
+				font-size: em(45);
 				font-family: $body-font;
-				margin: em(15) 0 0 0;
+				margin-top: 0;
 			}
 			h3 {
 				color: $grey;
@@ -42,12 +47,13 @@
 			text-align: center;
 			display: block;
 			img {
-				opacity: 0.7;
-				max-width: 300px;
-				border: 1px solid #222;
-				box-shadow: 0 0 1px rgba(0,0,0,0.2);
-				&:hover {
-					opacity: 1;
+				border: 5px solid #fff;
+				border-radius: 4px;
+				@include transition (all 0.2s ease-in-out);
+			}
+			&:hover {
+				img {
+					 border-color: $primary-color;
 				}
 			}
 		}
@@ -55,7 +61,7 @@
 			@include span-columns(6);
 			a.video-link {
 				display: inline-block;
-				padding: em(30) 0;
+				padding: 0;
 				.video-btn-text {
 					font-size: em(30);
 					vertical-align: middle;

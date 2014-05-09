@@ -458,37 +458,41 @@ header {
       font-size: 1.5em; }
 
 .video-promo {
-  background: #333333;
-  border-top: 1px solid #222;
+  background: #eee;
+  padding: 3.125em 0;
   overflow: hidden; }
+  @media screen and (min-width: 600px) {
+    .video-promo {
+      padding: 9.375em 0; } }
   .video-promo .label {
-    padding: 0.625em;
     text-align: center; }
     .video-promo .label h2 {
-      color: white;
+      color: #dead44;
       font-size: 1.875em;
+      font-weight: 100;
       font-family: "Open Sans", "Helvetica Neue", Helvetica;
-      margin: 0.9375em 0 0 0; }
+      margin-bottom: 0.3125em; }
     .video-promo .label h3 {
       color: #888888;
       font-family: "Baskerville";
       font-weight: normal;
       margin: 0.3125em 0 1.25em 0; }
+    .video-promo .label p {
+      color: #888;
+      line-height: 2; }
     @media screen and (min-width: 880px) {
       .video-promo .label {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 40.29137%;
-        text-align: right;
-        padding: 2.5em; }
+        width: 48.82117%;
+        text-align: left; }
         .video-promo .label:last-child {
           margin-right: 0; }
         .video-promo .label h2 {
-          color: white;
-          font-size: 1.875em;
+          font-size: 2.8125em;
           font-family: "Open Sans", "Helvetica Neue", Helvetica;
-          margin: 0.9375em 0 0 0; }
+          margin-top: 0; }
         .video-promo .label h3 {
           color: #888888;
           font-family: "Baskerville";
@@ -499,12 +503,13 @@ header {
     text-align: center;
     display: block; }
     .video-promo .watch-video a.video-link img {
-      opacity: 0.7;
-      max-width: 300px;
-      border: 1px solid #222;
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0.2); }
-      .video-promo .watch-video a.video-link img:hover {
-        opacity: 1; }
+      border: 5px solid #fff;
+      border-radius: 4px;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+    .video-promo .watch-video a.video-link:hover img {
+      border-color: #8dc449; }
   @media screen and (min-width: 880px) {
     .video-promo .watch-video {
       float: left;
@@ -515,7 +520,7 @@ header {
         margin-right: 0; }
       .video-promo .watch-video a.video-link {
         display: inline-block;
-        padding: 1.875em 0; }
+        padding: 0; }
         .video-promo .watch-video a.video-link .video-btn-text {
           font-size: 1.875em;
           vertical-align: middle;
@@ -921,7 +926,8 @@ header {
   display: block;
   position: relative;
   min-width: 100%;
-  min-height: 70%; }
+  min-height: 70%;
+  border-top: 1px solid #fff; }
   .classes .classes-promo {
     display: block;
     position: absolute;
@@ -939,7 +945,7 @@ header {
     z-index: 1;
     min-width: 100%;
     min-height: 100%;
-    background: rgba(75, 75, 75, 0.5); }
+    background: rgba(75, 75, 75, 0.9); }
   .classes .classes-promo-text {
     position: absolute;
     z-index: 2;
@@ -952,21 +958,25 @@ header {
     color: #fff;
     text-align: center; }
     .classes .classes-promo-text h2, .classes .classes-promo-text h4 {
-      font-family: 'Open Sans', 'Helvetica Neue', Helvetica;
       margin: 0;
       padding: 0; }
     .classes .classes-promo-text h2 {
-      font-size: 2.25em;
-      font-weight: 100; }
+      font-family: "brandon-grotesque", sans-serif;
+      text-transform: uppercase;
+      font-size: 1.875em;
+      font-weight: bold;
+      color: #8dc449; }
       @media screen and (min-width: 850px) {
         .classes .classes-promo-text h2 {
-          font-size: 4.375em; } }
+          font-size: 3.75em; } }
     .classes .classes-promo-text h4 {
+      font-family: 'Open Sans', 'Helvetica Neue', Helvetica;
       font-size: 1.375em;
-      font-weight: 100; }
+      font-weight: 100;
+      color: #888888; }
       @media screen and (min-width: 850px) {
         .classes .classes-promo-text h4 {
-          font-size: 2.1875em; } }
+          font-size: 2.0625em; } }
     .classes .classes-promo-text button.btn {
       font-size: 1.25em;
       margin-top: 1.875em; }
@@ -981,9 +991,12 @@ header {
   .class-list .class {
     display: block;
     float: left;
-    width: 25%;
+    width: 50%;
     margin: 0;
     position: relative; }
+    @media screen and (min-width: 850px) {
+      .class-list .class {
+        width: 25%; } }
     .class-list .class a .classes-overlay {
       position: absolute;
       top: 0;
@@ -1015,7 +1028,7 @@ header {
         font-size: 1.875em;
         padding: 1.25em 0;
         text-transform: uppercase; }
-        @media screen and (min-width: 850px) {
+        @media screen and (min-width: 1100px) {
           .class-list .class a .classes-promo-text h2 {
             font-size: 3.125em; } }
       .class-list .class a .classes-promo-text .sliding-area {

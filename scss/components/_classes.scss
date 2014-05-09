@@ -3,6 +3,7 @@
 	position:relative;
     min-width:100%;
     min-height:70%;
+    border-top: 1px solid #fff;
 	.classes-promo {
 		display:block;
 		position:absolute;
@@ -21,7 +22,7 @@
 		z-index:1;
     	min-width:100%;
     	min-height:100%;
-    	background: rgba(75,75,75,0.5);
+    	background: rgba(75,75,75,.9);
 	}
 	.classes-promo-text {
 		position: absolute;
@@ -35,22 +36,26 @@
 		color: #fff;
 		text-align: center;
 		h2, h4{
-			font-family: 'Open Sans', 'Helvetica Neue', Helvetica;
 			margin: 0;
 			padding: 0;
 		}
 		h2 {
-			font-size: em(36);
-			font-weight: 100;
+			font-family: $heading-font;
+			text-transform: uppercase;
+			font-size: em(30);
+			font-weight: bold;
+			color: $primary-color;
 			@media screen and (min-width: 850px) {
-				font-size: em(70);
+				font-size: em(60);
 			}
 		}
 		h4 {
+			font-family: 'Open Sans', 'Helvetica Neue', Helvetica;
 			font-size: em(22);
 			font-weight: 100;
+			color: $grey;
 			@media screen and (min-width: 850px) {
-				font-size: em(35);
+				font-size: em(33);
 			}
 		}
 		button.btn {
@@ -65,9 +70,12 @@
 	.class {
 		display: block;
 		float: left;
-		width: 25%;
+		width: 50%;
 		margin: 0;
 		position: relative;
+		@media screen and (min-width: 850px) {
+			width: 25%;
+		}
 		a {
 	    	.classes-overlay {
 				position: absolute;
@@ -100,7 +108,7 @@
 					font-size: em(30);
 					padding:  em(20) 0;
 					text-transform: uppercase;
-					@media screen and (min-width: 850px) {
+					@media screen and (min-width: 1100px) {
 						font-size: em(50);
 					}
 				}

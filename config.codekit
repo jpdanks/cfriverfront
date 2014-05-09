@@ -10436,7 +10436,7 @@
 		"outputAbbreviatedPath": "\/img\/play-video.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/img\/river-monster.png": {
 		"fileType": 32768,
@@ -11355,7 +11355,7 @@
 	"bowerAbbreviatedPath": "",
 	"displayValue": "cfriverfront",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "brackets_darkGray"
+	"iconImageName": "meme-wonka"
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 0,
