@@ -2,6 +2,124 @@
 	background: #222;
 }
 
+.cards {
+  @include clearfix;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 em(30);
+}
+
+.card {
+  @include transition (all 0.2s ease-in-out);
+  background-color: $card-background;
+  border-radius: 3px;
+  border: darken($dark-grey, 10%);
+  cursor: pointer;
+  position: relative;
+  @include media(900px) {
+    @include span-columns(6);  
+    @include omega(3n);
+  }
+
+  .ribbon-wrapper {
+    
+    @include size($ribbon-size);
+    overflow: hidden;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    z-index: 100;
+
+    .ribbon {
+      font-size: .8em;
+      font-weight: 800;
+      text-align: center;
+      @include transform(rotate(45deg));
+      position: relative;
+      padding: 2px 7px;
+      left: -15px;
+      top: 25px;
+      width: 150px;
+      background-color: $ribbon-background;
+      color: white;
+      box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    }
+  }
+
+  .card-header {
+    @include transition (all 0.2s ease-in-out);
+    background-color: $dark-grey;
+    border-bottom: $card-border;
+    border-radius: 3px 3px 0 0;
+    text-align: center;
+    position: relative;
+    padding: em(30) em(10);
+    h3 {
+    	margin:0;
+    	font-size: em(120);
+    	color: $primary-color;
+		font-weight: 100;
+		&:before {
+			content: "$";
+			position: absolute;
+			top: em(60);
+			margin-left: -20px;
+			font-size: em(3);
+			font-weight: 600;
+			color: lighten($dark-grey, 10%);
+		}
+		&:after {
+			content: "/ mo.";
+			position: absolute;
+			bottom: em(60);
+			margin-left: 0;
+			font-size: em(3);
+			font-weight: 600;
+			color: lighten($dark-grey, 10%);
+		}
+    }
+    .badge {
+    	font-family: $heading-font;
+    	text-transform: uppercase;
+    	color: #fff;
+    	font-weight: bold;
+    	padding: em(5) em(10);
+    	border: 2px solid #fff;
+    	max-width: 100px;
+    	margin: 0 auto;
+    	border-radius: 3px;
+    	&.gold {
+    		border-color: $gold;
+    		color: $gold;
+    	}
+    	&.silver {
+    		border-color: $silver;
+    		color: $silver;
+    	}
+    }
+  }
+
+  .card-copy {
+    font-size: em(18);
+    line-height: 1.5em;
+    padding: 0 em(30);
+    .member-perks {
+    	margin: 0;
+    	padding: 0 0 em(20) 0;
+    	li {
+    		margin: 0;
+	    	padding: em(5);
+	    	list-style-type: none;
+	    	border-bottom: 1px solid lighten($grey, 35%);
+	    	small {
+	    		color: lighten($grey, 15%)
+	    	}
+    	}
+    }
+  }
+}
+
+
 .member-levels {
 	@include outer-container;
 	.member {

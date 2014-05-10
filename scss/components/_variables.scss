@@ -4,6 +4,7 @@ $blue:				#33ACE0;
 $purple:			#65318F;
 $red:				#BF2932;
 $gold:				#DEAD44;
+$silver:			#EDEFF0;
 
 
 $primary-color:		$green;
@@ -22,6 +23,17 @@ $heading-font:		"brandon-grotesque",sans-serif;;
 $body-font:			'Open Sans', 'Helvetica Neue', Helvetica;
 $fancy-font:		'Baskerville';
 
+
+$card-border-color: 	#ddd;
+$card-border: 1px solid $card-border-color;
+$card-background: lighten($card-border-color, 10);
+$card-header-background: #444;
+$card-hover-background: lighten($card-background, 5);
+$card-image-background: #DBD199;
+$card-image-hover-background: lighten($card-image-background, 5);
+$card-stats-color: lighten($card-border-color, 10);
+$ribbon-size: 100px;
+$ribbon-background: $primary-color;
 
 *, header {
 	@include box-sizing(border-box);
