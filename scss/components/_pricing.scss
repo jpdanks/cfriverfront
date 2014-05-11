@@ -14,8 +14,8 @@
   background-color: $card-background;
   border-radius: 3px;
   border: darken($dark-grey, 10%);
-  cursor: pointer;
   position: relative;
+  margin-bottom: em(40);
   @include media(900px) {
     @include span-columns(6);  
     @include omega(3n);
