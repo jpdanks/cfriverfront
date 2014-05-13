@@ -26,6 +26,24 @@
 	&.ross {
 		background-image: url(../img/coaches/ross-action.jpg); 
 	}
+	&.jeff {
+		background-image: url(../img/coaches/jeff-action.jpg); 
+	}
+	&.paige {
+		background-image: url(../img/coaches/paige-action.jpg); 
+	}
+	&.steve {
+		background-image: url(../img/coaches/steve-action.jpg); 
+	}
+	&.aimee {
+		background-image: url(../img/coaches/aimee-action.jpg); 
+	}
+	&.matthew {
+		background-image: url(../img/rivfit.jpg); 
+	}
+	&.bill {
+		background-image: url(../img/coaches/bill-action.jpg); 
+	}
 	& {
 		background-color: #000;
 		background-position: top center;
@@ -87,24 +105,6 @@
 		}
 	}
 	&.odd {
-		&.jeff {
-			background-image: url(../img/coaches/jeff-action.jpg); 
-		}
-		&.paige {
-			background-image: url(../img/coaches/paige-action.jpg); 
-		}
-		&.steve {
-			background-image: url(../img/coaches/steve-action.jpg); 
-		}
-		&.aimee {
-			background-image: url(../img/coaches/aimee-action.jpg); 
-		}
-		&.matthew {
-			background-image: url(../img/rivfit.jpg); 
-		}
-		&.bill {
-			background-image: url(../img/coaches/bill-action.jpg); 
-		}
 		& {
 			background-color: #FFF;
 			background-position: top center;

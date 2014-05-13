@@ -1517,7 +1517,7 @@ header {
         list-style-type: none;
         border-bottom: 1px solid #e1e1e1; }
         .card .card-copy .member-perks li small {
-          color: #aeaeae; }
+          font-weight: bold; }
 
 .member-levels {
   max-width: 68em;
@@ -1832,6 +1832,18 @@ header {
     background-image: url(../img/fightfit.jpg); }
   .bio.ross {
     background-image: url(../img/coaches/ross-action.jpg); }
+  .bio.jeff {
+    background-image: url(../img/coaches/jeff-action.jpg); }
+  .bio.paige {
+    background-image: url(../img/coaches/paige-action.jpg); }
+  .bio.steve {
+    background-image: url(../img/coaches/steve-action.jpg); }
+  .bio.aimee {
+    background-image: url(../img/coaches/aimee-action.jpg); }
+  .bio.matthew {
+    background-image: url(../img/rivfit.jpg); }
+  .bio.bill {
+    background-image: url(../img/coaches/bill-action.jpg); }
   .bio {
     background-color: #000;
     background-position: top center;
@@ -1902,18 +1914,6 @@ header {
       font-size: 1.75em;
       color: #dead44;
       border-bottom: 1px solid #dead44; }
-  .bio.odd.jeff {
-    background-image: url(../img/coaches/jeff-action.jpg); }
-  .bio.odd.paige {
-    background-image: url(../img/coaches/paige-action.jpg); }
-  .bio.odd.steve {
-    background-image: url(../img/coaches/steve-action.jpg); }
-  .bio.odd.aimee {
-    background-image: url(../img/coaches/aimee-action.jpg); }
-  .bio.odd.matthew {
-    background-image: url(../img/rivfit.jpg); }
-  .bio.odd.bill {
-    background-image: url(../img/coaches/bill-action.jpg); }
   .bio.odd {
     background-color: #FFF;
     background-position: top center; }

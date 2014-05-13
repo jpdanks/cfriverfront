@@ -10625,6 +10625,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/img\/the_riv_blog.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23709,
+		"inputAbbreviatedPath": "\/img\/the_riv_blog.png",
+		"outputAbbreviatedPath": "\/img\/the_riv_blog.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/video-2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
