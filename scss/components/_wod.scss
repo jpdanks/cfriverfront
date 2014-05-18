@@ -4,7 +4,7 @@
 	padding: em(50) 0;
 	overflow: hidden;
 	@media screen and (min-width: 600px) {
-		padding: em(150) 0;
+		padding: em(150) 0  em(50) 0;
 	}
 	.label {
 		text-align: center;

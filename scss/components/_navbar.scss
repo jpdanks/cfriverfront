@@ -91,7 +91,7 @@ nav.navbar {
 					.rivermonster-logo {
 						display: inline-block;
 						background: url(../img/rivermonster-logo.png) center center no-repeat;
-						@include background-size(90%);
+						background-size: 90%;
 						background-color: darken($primary-color, 5%);
 						vertical-align: middle;
 						width: 2px;
@@ -108,7 +108,7 @@ nav.navbar {
 						display: inline-block;
 						background-image: url(../img/main-logo.png);
 						background-repeat:no-repeat;
-						@include background-size(100%);
+						background-size: 100%;
 						vertical-align: middle;
 						width: 180px;
 						height: 55px;

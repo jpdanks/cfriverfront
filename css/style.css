@@ -463,7 +463,7 @@ header {
   overflow: hidden; }
   @media screen and (min-width: 600px) {
     .video-promo {
-      padding: 9.375em 0; } }
+      padding: 9.375em 0 3.125em 0; } }
   .video-promo .label {
     text-align: center; }
     .video-promo .label h2 {
@@ -926,8 +926,7 @@ header {
   display: block;
   position: relative;
   min-width: 100%;
-  min-height: 70%;
-  border-top: 1px solid #fff; }
+  min-height: 70%; }
   .classes .classes-promo {
     display: block;
     position: absolute;
@@ -1180,7 +1179,7 @@ header {
         background-image: -moz-linear-gradient(bottom, black 0%, black 35%, transparent 65%);
         background-image: -ms-linear-gradient(bottom, black 0%, black 35%, transparent 65%);
         background-image: -o-linear-gradient(bottom, black 0%, black 35%, transparent 65%);
-        background-image: linear, bottom, black 0%, black 35%, transparent 65%; }
+        background-image: linear-gradient(bottom, black 0%, black 35%, transparent 65%); }
       .coaches .coaches-row .coach-profile .info {
         position: absolute;
         text-align: center;
@@ -1433,8 +1432,8 @@ header {
       .card:nth-child(3n+1) {
         clear: left; } }
   .card .ribbon-wrapper {
-    width: 100px;
     height: 100px;
+    width: 100px;
     overflow: hidden;
     position: absolute;
     top: -1px;
@@ -1591,7 +1590,7 @@ header {
         background-image: -webkit-linear-gradient(135deg, #4b4b4b 0%, #4b4b4b 50%, #444444 50%);
         background-image: -moz-linear-gradient(135deg, #4b4b4b 0%, #4b4b4b 50%, #444444 50%);
         background-image: -o-linear-gradient(135deg, #4b4b4b 0%, #4b4b4b 50%, #444444 50%);
-        background-image: linear, 135deg, #4b4b4b 0%, #4b4b4b 50%, #444444 50%; }
+        background-image: linear-gradient(135deg, #4b4b4b 0%, #4b4b4b 50%, #444444 50%); }
         @media screen and (min-width: 800px) {
           .member-levels .price-table .price-row .cost {
             float: left;
@@ -1867,14 +1866,14 @@ header {
     background-image: -moz-linear-gradient(bottom, black 0%, black 45%, transparent 85%);
     background-image: -ms-linear-gradient(bottom, black 0%, black 45%, transparent 85%);
     background-image: -o-linear-gradient(bottom, black 0%, black 45%, transparent 85%);
-    background-image: linear, bottom, black 0%, black 45%, transparent 85%; }
+    background-image: linear-gradient(bottom, black 0%, black 45%, transparent 85%); }
     @media screen and (min-width: 1050px) {
       .bio .bio-overlay {
         background-image: -webkit-linear-gradient(right, black 0%, black 45%, transparent 85%);
         background-image: -moz-linear-gradient(right, black 0%, black 45%, transparent 85%);
         background-image: -ms-linear-gradient(right, black 0%, black 45%, transparent 85%);
         background-image: -o-linear-gradient(right, black 0%, black 45%, transparent 85%);
-        background-image: linear, right, black 0%, black 45%, transparent 85%; } }
+        background-image: linear-gradient(right, black 0%, black 45%, transparent 85%); } }
   .bio .bio-info {
     color: #FFF;
     position: relative;
@@ -1927,14 +1926,14 @@ header {
     background-image: -moz-linear-gradient(bottom, white 0%, white 45%, transparent 85%);
     background-image: -ms-linear-gradient(bottom, white 0%, white 45%, transparent 85%);
     background-image: -o-linear-gradient(bottom, white 0%, white 45%, transparent 85%);
-    background-image: linear, bottom, white 0%, white 45%, transparent 85%; }
+    background-image: linear-gradient(bottom, white 0%, white 45%, transparent 85%); }
     @media screen and (min-width: 1050px) {
       .bio.odd .bio-overlay {
         background-image: -webkit-linear-gradient(left, white 0%, white 35%, transparent 65%);
         background-image: -moz-linear-gradient(left, white 0%, white 35%, transparent 65%);
         background-image: -ms-linear-gradient(left, white 0%, white 35%, transparent 65%);
         background-image: -o-linear-gradient(left, white 0%, white 35%, transparent 65%);
-        background-image: linear, left, white 0%, white 35%, transparent 65%; } }
+        background-image: linear-gradient(left, white 0%, white 35%, transparent 65%); } }
   .bio.odd .bio-info {
     color: #333; }
     @media screen and (min-width: 1050px) {
@@ -2188,3 +2187,53 @@ header {
 .content .sign-up-form {
   float: none;
   margin: 0 auto; }
+
+.updates {
+  display: block;
+  position: relative;
+  min-width: 100%;
+  min-height: 60%; }
+  .updates .updates-promo {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    background: transparent url(../img/promo.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+  .updates .updates-overlay {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    background: #8dc449;
+    opacity: .9; }
+  .updates .updates-promo-text {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    padding: 1.25em 0;
+    max-width: 75em; }
+    .updates .updates-promo-text h4 {
+      font-family: 'Open Sans', 'Helvetica Neue', Helvetica;
+      font-size: 1.375em;
+      font-weight: 100;
+      margin: 3.75em 0 0.625em 0;
+      color: #fff; }
+      @media screen and (min-width: 850px) {
+        .updates .updates-promo-text h4 {
+          font-size: 2.0625em; } }
+    .updates .updates-promo-text p {
+      font-size: 1.125em;
+      margin-bottom: 0;
+      line-height: 1.5;
+      color: #fff; }
+    .updates .updates-promo-text button.btn {
+      font-size: 1.25em;
+      margin-top: 1.875em; }
+      .updates .updates-promo-text button.btn a {
+        color: #fff; }
