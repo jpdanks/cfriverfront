@@ -1,57 +1,35 @@
-.updates {
+.tumblr-feed {
+	background-color: $pale-green;
 	display:block;
 	position:relative;
     min-width:100%;
-    min-height:60%;
-	.updates-promo {
-		display:block;
-		position:absolute;
-		z-index:1;
-    	min-width:100%;
-    	min-height:100%;
-		background: transparent url(../img/promo.jpg) center center no-repeat; 
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
+    padding: em(50) 0;
+	overflow: hidden;
+	@media screen and (min-width: 600px) {
+		padding: em(100) 0;
 	}
-	.updates-overlay {
-		display:block;
-		position:absolute;
-		z-index:1;
-    	min-width:100%;
-    	min-height:100%;
-    	background: $green;
-    	opacity: .9;
-	}
-	.updates-promo-text {
-		position: relative;
-		z-index:2;
-		margin: 0 auto;
-		padding: em(20) 0;
-		max-width: em(1200);
-		h4 {
-			font-family: 'Open Sans', 'Helvetica Neue', Helvetica;
-			font-size: em(22);
-			font-weight: 100;
-			margin: em(60) 0 em(10) 0;
-			color: #fff;
-			@media screen and (min-width: 850px) {
-				font-size: em(33);
-			}
-		}
-		p {
-			font-size: em(18);
-			margin-bottom: 0;
-			line-height: 1.5;
-			color: #fff;
-		}
-		button.btn {
-			font-size: em(20);
-			margin-top: em(30);
-			a {
-				color: #fff;
-			}
-		}
-	}
+    .tumblr_posts {
+    	padding: 0;
+    	list-style-type: none;
+		margin:0 auto;
+    	.tumblr_title {
+    		font-weight: 700;
+    		text-transform: uppercase;
+			font-family: $heading-font;
+			padding: em(10) 0;
+			font-size: em(30);
+			margin: em(10) 0 0 0;
+    	}
+    	.tumblr_body {
+    		font-family: $body-font;
+    		img {
+    			display: none;
+    			// max-height: 200px;
+    			// padding-right: em(10);
+    		}
+    	}
+    }
+    .button-container {
+    	text-align: right;
+    }
 }
