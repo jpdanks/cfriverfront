@@ -1095,6 +1095,10 @@ header {
       .class-list .class.fightfit .classes-overlay {
         background: #bf2932; }
 
+.mindbody-sch {
+  text-align: center;
+  font-size: 1.25em; }
+
 .coaches {
   background: #f6f7f8; }
   .coaches .class-types {
@@ -1273,6 +1277,17 @@ header {
           padding: 0; }
           .stories .testimonials .text-item:last-child {
             margin-right: 0; } }
+      .stories .testimonials .text-item.full {
+        max-width: 100%;
+        padding-top: 2%; }
+        @media screen and (min-width: 880px) {
+          .stories .testimonials .text-item.full {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 100%; }
+            .stories .testimonials .text-item.full:last-child {
+              margin-right: 0; } }
     .stories .testimonials .video-item,
     .stories .testimonials .text-item {
       background: #fff;

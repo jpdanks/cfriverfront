@@ -29,6 +29,13 @@
 				@include span-columns(4);
 				padding: 0;
 			}
+			&.full {
+				@media screen and (min-width: 880px) {
+					@include span-columns(12);
+				}
+				max-width: 100%;
+				padding-top: 2%;
+			}
 		}
 		.video-item,
 		.text-item  {
