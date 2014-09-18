@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "17682",
+"creatorBuild": "17756",
 "files": {
 	"\/404.html": {
 		"fileType": 8192,
@@ -10053,6 +10053,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/img\/coaches\/allie.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.30843e+06,
+		"inputAbbreviatedPath": "\/img\/coaches\/allie.jpg",
+		"outputAbbreviatedPath": "\/img\/coaches\/allie.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/coaches\/bill snatch tripple extension.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -10163,6 +10174,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/img\/coaches\/kristen-action.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.37863e+06,
+		"inputAbbreviatedPath": "\/img\/coaches\/kristen-action.jpg",
+		"outputAbbreviatedPath": "\/img\/coaches\/kristen-action.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/coaches\/matt.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -10173,6 +10195,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
+		},
+	"\/img\/coaches\/mere-action.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 951524,
+		"inputAbbreviatedPath": "\/img\/coaches\/mere-action.jpg",
+		"outputAbbreviatedPath": "\/img\/coaches\/mere-action.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/img\/coaches\/mere.jpg": {
 		"fileType": 16384,
@@ -10328,6 +10361,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/img\/endurance.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 431011,
+		"inputAbbreviatedPath": "\/img\/endurance.jpg",
+		"outputAbbreviatedPath": "\/img\/endurance.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/fightfit.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -10475,12 +10519,12 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 387281,
+		"initialSize": 963260,
 		"inputAbbreviatedPath": "\/img\/rivfit.jpg",
 		"outputAbbreviatedPath": "\/img\/rivfit.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/img\/sponsors\/cavemancoffeelogo.png": {
 		"fileType": 32768,
@@ -10695,12 +10739,12 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 390735,
+		"initialSize": 1.0808e+06,
 		"inputAbbreviatedPath": "\/img\/yoga.jpg",
 		"outputAbbreviatedPath": "\/img\/yoga.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/index.html": {
 		"fileType": 8192,
@@ -11529,6 +11573,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"prefer_english_operator": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"space_operators": {
 			"active": 0,
 			"flagValue": -1
@@ -12004,6 +12052,7 @@
 	"stylusAutoOutputPathReplace1": "stylus",
 	"stylusAutoOutputPathReplace2": "css",
 	"stylusAutoOutputPathStyle": 2,
+	"stylusCreateSourceMap": 0,
 	"stylusDebugStyle": 0,
 	"stylusImportCSS": 0,
 	"stylusOutputStyle": 0,

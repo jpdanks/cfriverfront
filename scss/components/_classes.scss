@@ -73,7 +73,7 @@
 		margin: 0;
 		position: relative;
 		@media screen and (min-width: 850px) {
-			width: 25%;
+			width: 33.3333%;
 		}
 		a {
 	    	.classes-overlay {
@@ -178,6 +178,26 @@
 			background-size: cover;
 			.classes-overlay {
 		    	background: $purple;
+			}
+	    }
+	    &.mobility {
+			background: transparent url(../img/yoga.jpg) center center no-repeat; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			.classes-overlay {
+		    	background: $purple;
+			}
+	    }
+	    &.endurance {
+			background: transparent url(../img/endurance.jpg) center center no-repeat; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			.classes-overlay {
+		    	background: $green;
 			}
 	    }
 	    &.fightfit {
