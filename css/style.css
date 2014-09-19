@@ -1648,10 +1648,12 @@ header {
     @media screen and (min-width: 800px) {
       .member-levels .member {
         font-size: 1.875em; } }
+    .member-levels .member.bronze {
+      color: #98845A; }
     .member-levels .member.silver {
-      color: #CCCCCC; }
+      color: #EDEFF0; }
     .member-levels .member.gold {
-      color: #F5CB6F;
+      color: #DEAD44;
       margin-top: 2.5em; }
   .member-levels .price-table {
     float: left;

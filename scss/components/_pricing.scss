@@ -131,11 +131,14 @@
 		@media screen and (min-width: 800px) {
 			font-size: em(30);
 		}
+		&.bronze {
+			color: $bronze;
+		}
 		&.silver {
-			color: #CCCCCC;
+			color: $silver;
 		}
 		&.gold {
-			color: #F5CB6F;
+			color: $gold;
 			margin-top: em(40);
 		}
 	}
